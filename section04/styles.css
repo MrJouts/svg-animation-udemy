@@ -16,16 +16,21 @@ svg {
   animation-duration: 5s;
   animation-iteration-count: 1;
   animation-direction: alternate;
-  animation-timing-function: ease-in; 
+  animation-timing-function: ease-in;
   animation-fill-mode: forwards;
 }
 
 @keyframes monkey {
-  from {
+  0% {
     stroke-dashoffset: -2000;
   }
 
-  to {
+  50% {
+    stroke: red;
+  }
+
+  100% {
     stroke-dashoffset: 0;
+    stroke: purple;
   }
 }
