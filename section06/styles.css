@@ -1,8 +1,28 @@
+div {
+  text-align: center;
+  padding-top: 100px;
+}
+
 svg {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 20px;
+  cursor: pointer;
+  overflow: visible;
+}
+
+.twitter-outline,
+.twitter-icon {
+  transition: 300ms all;
+  transform-origin: 50% 50%;
+}
+
+.twitter-icon-group:hover .twitter-outline {
+  transform: scale(0);
+}
+
+.twitter-icon-group:hover .twitter-icon {
+  transform: scale(2);
+  stroke: #4099ff;
+  opacity: 0;
 }
